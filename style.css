@@ -1,0 +1,66 @@
+/* I have chosen this background color to be easier on the eyes than plain white, but doesn't make it look too busy */
+
+.background-color {
+  background: #D8BFD8;
+}
+
+/* .btn is for the base layer of what we are calling "buttons", which will separate all the sections for now. Each one also has a variation depending on size and what is inside the button. */
+
+.btn {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 12px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  
+}
+
+.btn-header {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+.btn-small {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+/* this is for the contact buttons, to easier identify them as links */
+
+.btn-ct {
+  color: blue;
+  background: white;
+  border: 1px solid black;
+  font-size: 12px;
+}
+
+.p-btn {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  margin: 12px;
+  padding: 12px 12px;
+  border-radius: 12px;
+}
+
+.text-centered {
+  text-align: center;
+}
+/* this button is for the lists to position the bullets and numbers. Similar to .p-btn but with added style position */
+.list {
+    text-align: center;
+    list-style-position: inside;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    margin: 12px;
+    padding: 12px 12px;
+    border-radius: 12px;
+}
+
