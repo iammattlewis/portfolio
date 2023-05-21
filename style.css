@@ -15,7 +15,7 @@
   margin: 12px;
   padding: 12px 12px;
   border-radius: 12px;
-  height: 12px;
+  height: auto;
   
 }
 
@@ -39,6 +39,18 @@
   background: white;
   border: 1px solid black;
   font-size: 12px;
+}
+
+/* link will change to green when cursor hovers over it */
+
+.btn-ct:hover {
+  color: green;
+}
+
+/* link will change to red once visited */
+
+.btn-ct:visited {
+  color: red;
 }
 
 .p-btn {
