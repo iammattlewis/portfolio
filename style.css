@@ -23,8 +23,6 @@
   color: black;
   background: white;
   border: 1px solid black;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .btn-small {
@@ -41,8 +39,6 @@
   margin: 12px;
   padding: 12px 12px;
   border-radius: 12px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .text-centered {
