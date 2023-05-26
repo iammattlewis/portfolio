@@ -1,59 +1,87 @@
-<!DOCTYPE html>
-<html lang="en" class="background-color">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <header class="text-centered">
-    <div>
-      <h1 class="btn btn-header">Matthew Lewis</h1>
-    </div>
-    <div>
-      <h3 class="btn btn-small">Software Developer</h3>
-    </div>
-      <ul class="navigation">
-        <li><a href="https://iammattlewis.github.io/portfolio/">About Me</a></li>
-        <li><a href="">Contact</a></li>  
-      </ul>
-  </header>
-  <main>
-    <article class="text-centered">
-      <p class="p-btn">Currently based in Winter Haven, FL.</p>
-      <img src="images/winterHaven.jpg" alt="Photo of downtown Winter Haven, FL"
-        width="500"
-        height="300"
-        >
-      <hr>
-      <p class="p-btn">After years of working in warehouses, <br>
-        I finally decided it was time to pursue an interest I've always had: software. <br>
-        I'm looking forward to jumping into the development process <br>
-        of being part of a creative team and solving real world problems for myself and others.<br></p>
-      <p class="btn btn-small"><b>Values I pride myself on:</b></p>
-      <ol class="list">
-        <li><em>Integrity</em></li>
-        <li><em>Honesty</em></li>
-        <li><em>Hard Work</em></li>
-      </ol>
-      <hr>
-      <p class="btn btn-small"><b>When I'm  not learning about software development, I enjoy:</b></p>
-      <ul class="list">
-        <li>Spending time with my cat</li>
-        <li>Watching baseball, especially the Atlanta Braves</li>
-        <li>Hanging out with friends</li>
-      </ul>
-    </article>
-  </main>
-<hr>
-  <nav class="text-centered">
-    <p class="btn btn-small">CONTACT ME</p>
-  </nav>
-  <footer class="text-centered">
-    <a href="https://www.linkedin.com/in/iammattlewis/" target="_blank"> <img src="images/In-Blue-128.png" style="width: 40px; height: 40px;"> </a>
-    <a href="https://github.com/iammattlewis" target="_blank"> <img src="images/githubcat.jpg" alt="Github Invertocat Logo" style="width: 40px; height: 40px;"> </a>
-  </footer>
-</body>  
-</html>
+/* I have chosen this background color to be easier on the eyes than plain white, but doesn't make it look too busy */
+
+.background-color {
+  background: white;
+}
+
+/* .btn is for the base layer of what we are calling "buttons", which will separate all the sections for now. Each one also has a variation depending on size and what is inside the button. */
+
+.btn {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 12px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  height: auto;
+  width: auto;
+}
+
+.btn-header {
+  color: black;
+  background: #D8BFD8;
+  border: 1px solid black;
+}
+
+.btn-small {
+  color: black;
+  background: #D8BFD8;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.p-btn {
+  color: black;
+  background: #D8BFD8;
+  border: 1px solid black;
+  margin: 12px;
+  padding: 12px 12px;
+  border-radius: 12px;
+}
+
+
+
+.text-centered {
+  text-align: center;
+}
+/* this button is for the lists to position the bullets and numbers. Similar to .p-btn but with added style position */
+.list {
+    text-align: center;
+    list-style-type: "-";
+    list-style-position: inside;
+    color: black;
+    background: #D8BFD8;
+    border: 1px solid black;
+    margin: 12px;
+    padding: 12px 12px;
+    border-radius: 12px;
+}
+
+.topnav {
+  background-color: #D8BFD8;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
