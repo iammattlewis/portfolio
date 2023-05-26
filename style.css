@@ -59,13 +59,29 @@
     border-radius: 12px;
 }
 
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.topnav {
+  background-color: #D8BFD8;
   overflow: hidden;
-  display: inline-block;
-  background-color: blanchedalmond;
-  border-radius: 8px;
 }
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
