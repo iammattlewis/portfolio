@@ -1,116 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"
-    <title>Matthew Lewis</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-
-    <!-- Example Code -->
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Matthew Lewis</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#aboutme">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mywork">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#connect">Connect</a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Matthew Lewis</title>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Matthew Lewis - Software Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#mywork">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#connect">Connect</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    
-    <!-- End Example Code -->
-  </body>
-</html>
-    <!-- End Example Code -->
-  </body>
-</html>
-  <main>
-    <article class="text-centered">
-      <a class="btn p-btn">Currently based in Winter Haven, FL.</a>
+    </div>
+  </nav>
+
+  <main class="text-center">
+    <article>
+      <a class="card text-bg-info mb-3">Currently based in Winter Haven, FL.</a>
       <div>
-      <img src="images/winterHaven.jpg" alt="Photo of downtown Winter Haven, FL"
-        width=400dvw
-        >
+        <img src="images/winterHaven.jpg" alt="Photo of downtown Winter Haven, FL" width="400dvw">
       </div>
       <hr>
-      <div>
-        <h3 class="btn btn-small">Check Out My Projects:</h3>
-          <div>
-            <h4 id="mywork">Decoder Ring</h4>
-              <p>A website featuring three different encode/decode ciphers. <br>
-                 Written using Javascript/HTML/CSS.</p>
-              <img src="images/decoder_screenshot.jpg"
-              width=500dvh>
-              <div class="text-centered">
-              <a href="https://github.com/iammattlewis/decoder_ring" target="_blank">CODE</a>
-              <a href="https://iammattlewis.github.io/decoder_ring/" target="_blank">LIVE</a>
-              </div>
+      <div class="card">
+        <h3 class="card text-bg-info mb-3">Check Out My Projects:</h3>
+        <div class="card-body">
+          <h4 class="card-title" id="mywork">Decoder Ring</h4>
+          <p class="card-text">A website featuring three different encode/decode ciphers. <br>
+            Written using Javascript/HTML/CSS.</p>
+          <img src="images/decoder_screenshot.jpg" width="500dvh">
+          <div class="text-center">
+            <a href="https://github.com/iammattlewis/decoder_ring" class="card-link" target="_blank">CODE</a>
+            <a href="https://iammattlewis.github.io/decoder_ring/" class="card-link" target="_blank">LIVE</a>
           </div>
+        </div>
       </div>
       <hr>
       <div style="display: inline-block;">
-      <p id = "aboutme" class="p-btn">After years of working in warehouses, <br>
-        I finally decided it was time to pursue an interest I've always had: software. <br>
-        I'm looking forward to jumping into the development process <br>
-        and being part of a creative team solving real world problems for myself and others.<br></p><br>
+        <p id="aboutme" class="p-btn">After years of working in warehouses, <br>
+          I finally decided it was time to pursue an interest I've always had: software. <br>
+          I'm looking forward to jumping into the development process <br>
+          and being part of a creative team solving real-world problems for myself and others.<br></p><br>
       </div>  
       <div>
-      <p class="btn btn-small"><b>Values I pride myself on:</b></p><br>
-      <ul class="list btn-small">
-        <li><em><b>Integrity</b></em></li>
-        <li><em><b>Honesty</b></em></li>
-        <li><em><b>Hard Work</b></em></li>  
-      </ul>
+        <p><b>Values I pride myself on:</b></p><br>
+        <ul class="list-group">
+          <li class="list-group-item text-bg-info mb-3">Integrity</li>
+          <li class="list-group-item text-bg-info mb-3">Honesty</li>
+          <li class="list-group-item text-bg-info mb-3">Hard Work</li>
+        </ul>
       </div>
       <hr>
-      <p class="btn btn-small"><b>When I'm not learning about software development, I enjoy:</b></p><br>
-      <ul class="list btn-small">
-        <li>Spending time with my cat</li>
-        <li>Watching baseball, especially the Atlanta Braves</li>
-        <li>Hanging out with friends</li>
+      <p><b>When I'm not learning about software development, I enjoy:</b></p><br>
+      <ul class="list-group">
+        <li class="list-group-item text-bg-info mb-3">Spending time with my cat</li>
+        <li class="list-group-item text-bg-info mb-3">Watching baseball, especially the Atlanta Braves</li>
+        <li class="list-group-item text-bg-info mb-3">Hanging out with friends</li>
       </ul>
       <div>
-          <img src="images/Newman.jpg" alt="My cat, Newman"
-            width=400dvh
-          >
+        <img src="images/Newman.jpg" alt="My cat, Newman" width="400dvh">
       </div>   
     </article>
   </main>
-<hr>
-<div>
-   <iframe id = "experience" class= "iframe"
-    src="ResumePDF.pdf"
-    width=800px
-    height="800px">
-  </iframe>
-</div>    
-<hr>
-  <nav class="text-centered">
-    <p id = "connect" class="btn btn-small">CONNECT:</p>
+  <hr>
+  <div class="iframe-container">
+    <iframe id="experience" class="iframe" src="ResumePDF.pdf" width="800px" height="800px"></iframe>
+  </div>    
+  <hr>
+  <nav class="text-center">
+    <p id="connect" class="btn btn-small">CONNECT:</p>
   </nav>
-  <footer class="text-centered">
-    <a href="https://www.linkedin.com/in/iammattlewis/" target="_blank"> <img src="images/In-Blue-128.png" style="width: 100px; height: 100px;"> </a>
-    <a href="https://github.com/iammattlewis" target="_blank"> <img src="images/githubcat.jpg" alt="Github Invertocat Logo" style="width: 100px; height: 100px;"> </a>
+  <footer class="text-center">
+    <a href="https://www.linkedin.com/in/iammattlewis/" target="_blank">
+      <img src="images/In-Blue-128.png" style="width: 80px; height: 80px;">
+    </a>
+    <a href="https://github.com/iammattlewis" target="_blank">
+      <img src="images/githubcat.jpg" alt="Github Invertocat Logo" style="width: 80px; height: 80px;">
+    </a>
   </footer>
-</body>  
+</body>
 </html>
